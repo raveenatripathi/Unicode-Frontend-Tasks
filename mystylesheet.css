@@ -1,0 +1,154 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2.2fr 1.7fr 2.9fr;
+    grid-template-areas: 
+        "welcome        welcome      contact"
+        "photo          info         info"
+        "skills         projects     interests"
+        "contactinfo    contactme    contactme" ;
+    height: auto;
+    
+    text-align: center;
+    text-justify: center;
+    font-family: cursive;
+    font-size: 17px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.welcome {
+    background-color: #030303;
+    color: #fffdff;
+    grid-area: welcome;
+    font-size: larger;
+    font-size: 30px;
+}
+
+.contact {
+    grid-area: contact;
+    font-size: 20px;
+    background-color: #878886;
+}
+
+.photo {
+    grid-area: photo;
+    background-color: #ff5e94;
+}
+
+.info {
+    grid-area: info;
+    background-color: #f5ebccfd;
+}
+
+.skills {
+    grid-area: skills;
+    
+    background-color: #9debfffd;
+}
+
+.projects {
+    grid-area: projects;
+    background-color: #c3f8c1ea;
+    
+}
+
+.interests {
+    grid-area: interests;
+    background-color: #f7cedcfd;
+}
+
+.contactinfo {
+    grid-area: contactinfo;
+    background-color: #f7c393fd;
+}
+
+.contactme {
+    grid-area: contactme;
+    background-color: #a0c0fafd;
+}
+
+ul {
+    text-align: left;
+}
+
+h1, h2, h3, h4 {
+    font-family: algerian;
+    font-style: ;
+}
+
+h2, h3 {
+    font-size: 27px;
+}
+
+.contactme, .contactinfo {
+    padding-left: 50px;
+}
+
+
+input {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 300px;
+}
+
+textarea {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.blank:focus {
+    border: 2px solid black;
+    background-color: #c5e7f3;
+}
+
+label {
+    display: inline-block;
+    width: 180px;
+}
+
+
+.button {
+    background-color: #9c9cb4;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: 4px black;
+    transition-duration: 0.4s;
+    width: 120px;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.4fr 1.1fr 1fr 0.7fr 0.5fr 0.6fr 0.7fr 1.2fr ;
+        grid-template-areas: 
+        "welcome" 
+        "contact"
+        "photo"
+        "info" 
+        "skills" 
+        "projects"
+        "interests" 
+        "contactinfo"  
+        "contactme";
+        font-size: 90%;
+    }
+    h1, h2, h3, h4 {
+        font-size: 150%;
+    }
+    image {
+        width: 90%;
+        height: auto;
+    }
+}

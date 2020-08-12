@@ -1,0 +1,39 @@
+.main {
+    display: grid;
+    background-color: #3d3d3d;
+    color: white;
+    padding: 10px;
+}
+h1, h2 {
+    text-align: center;
+    text-justify: center;
+}
+
+table, th, td {
+    border: 2px solid #777171;
+    text-align: center;
+    text-justify: center;
+    border-collapse: collapse;
+    align-items: center;
+    align-self: center;
+}
+table {
+    width: 400px;
+    height: 150px;
+}
+.statstable {
+    overflow-x: auto;
+}
+@media only screen and (max-width: 750px)
+{
+    .main{
+        font-size: 99%;
+    }
+    h1, h2 {
+        text-align: left;
+    }
+    table{
+        width: 300px;
+        height: 100px;
+    }
+}

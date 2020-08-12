@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Raveena's Portfolio
+        </title>
+        <link rel="stylesheet" href="mystylesheet.css"
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="welcome">
+                <h1> Hi, Welcome to my page!</h1>
+            </div>
+            <div class="contact">
+                <ul>
+                    <li> <a href="#contactme"> Contact Me! </a> </li>
+                    <li> <a href="#skills"> Skills </a> </li>
+                    <li> <a href="#projects"> Projects </a>> </li>
+                </ul>
+            </div>
+            <div class="photo">
+                <img src="myphoto.jpg" alt="Raveena Tripathi" width= "50%" height="auto">
+                <p style="font-size: 20px;"> <i> Raveena Tripathi </i></p>
+            </div>
+            <div class= "info">
+                <h2>ABOUT ME</h2>
+                <p> Hi, I am Raveena Tripathi! I am a second year Computer Engineering student at Dwarkadas Jivanlal Sanghvi
+                College of Engineering, Mumbai. I am a motivated and hard working individual who is always 
+                willing to take responsibilities and fulfill them whether its in a team or individually.
+                I am a beginner when it comes to coding and I am still exploring the different fields to see what interests me. 
+                Currently, I have taken an interest in web developement. My aim is to work on my technical skills, constantly 
+                challenge myself to learn new things and keep growing.                        
+                </p> 
+            </div>
+        
+            
+            <div class="skills" id="skills">
+                <h2>SKILLS</h2>
+                <p>
+                    <b>Coding Languages:</b>
+                    <ul>
+                        <li>C Programming</li>
+                        <li>C++ Programming</li>
+                        <li>Python</li>
+                        <li>HTML/CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="projects" id="projects">
+                <h2>MY WORK</h2>
+                <a href="https://github.com/raveenatripathi" target="_blank">
+                    <img src="github.png" alt="github" title="My projects" width="110px" height="auto">
+                </a>
+                <br>
+                <p> raveenatripathi</p>
+                </div>
+
+            <div class="interests">
+                <h2>INTERESTS</h2>
+                <ul>
+                    <li>Reading</li>
+                    <li>Dancing</li>
+                    <li>Baking</li>
+                    <li>Travelling</li>
+                </ul>
+            </div>
+            <!--</div>-->
+            <!--<div>-->
+            <div class="contactinfo">
+                <h2>GET IN TOUCH!</h2>
+                <p style="text-align: left">
+                    &nbsp;
+                    <a href="mailto: raveena.tripathi@gmail.com">
+                    <img src="gmail.jpg" alt="email" title="Email me!" width="70px" height="auto" onclick="emailto: raveena.tripathi@gmail.com"> </a> &nbsp; 
+                    raveena.tripathi@gmail.com <br>
+                    <br> <br>
+                    &nbsp; 
+                    <a href="tel: 9769403959">
+                    <img src="phone1.png" alt="phone" title="Call me!" width="70px" height="auto"> </a> &nbsp; 9769403959
+                </p>
+            </div>
+            <div class="contactme" id="contactme">
+                <h2>CONTACT ME</h2>
+                <form style="text-align: left" id="formuser" action="Welcome.html" onsubmit="return validate()">
+                    <label for="fname">First Name:</label> 
+                    <input type="text" id="fname" name="fname" style="type" class="blank" > 
+                    <br> <br>
+                    <label for="lname">Last Name:</label> 
+                    <input type="text" id="lname" name="lname" class="blank" > 
+                    <br> <br>
+                    <label for="email">Email :</label> 
+                    <input type="email" name="email" id="email" class="blank" >
+                    <br> <br>
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="number" pattern="[0-9]{10}" class="blank">
+                    <br> <br>
+                    <label for="message">Message:</label> <br> <br>
+                    <textarea name="message" id="message" cols="50" rows="5" class="blank"></textarea>
+                    <br> <br>
+                    <input type="submit" value="Submit" class="button" id="submit"> &nbsp;
+                    <input type="reset" class="button" id="reset">
+                </form>
+                <br> <br>
+            </div>
+            <!--</div>-->
+        </div>
+    </body>
+
+    <script>
+        function validate()
+        {
+            var fn= document.getElementById("fname");
+            var ln= document.getElementById("lname");
+            var em= document.getElementById("email");
+            var no= document.getElementById("mobile")
+
+            if (fn.value.trim()== "" || ln.value.trim()== "" || em.value.trim()=="" || no.value.trim()=="") 
+            {
+                alert("Please fill all the fields!");
+                return false;
+            }
+            else 
+            {
+                return true;
+            }
+        }
+    </script>
+</html>
